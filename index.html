@@ -6,16 +6,14 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="logo">
-        <a href="#">
-          <img
-            src="img/logo.png"
-            alt="Логотип интернет-магазина Device"
-            width="163"
-            height="35"
-          />
-        </a>
-      </div>
+      <a class="logo">
+        <img
+          src="img/logo.png"
+          alt="Логотип интернет-магазина Device"
+          width="163"
+          height="35"
+        />
+      </a>
       <div class="user-actions">
         <!--  search form  -->
         <ul class="actions">
@@ -37,6 +35,8 @@
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
+        </ul>
+        <ul class="main-menu-rest">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -73,8 +73,8 @@
       </section>
     </main>
     <footer class="site-footer">
-      <div class="footer-logo">
-        <a href="#">
+      <section class="footer-top">
+        <a class="footer-logo">
           <img
             src="img/logo.png"
             alt="Логотип интернет-магазина Device"
@@ -82,29 +82,39 @@
             height="35"
           />
         </a>
-      </div>
-      <ul class="footer-actions">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-
-      <address>г. Москва, ул. Строителей, 15</address>
-      <ul class="footer-nav">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <a href="#" class="telephone">Тел.: +7 (495) 495-95-95</a>
-
-      <ul class="socials">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter</a></li>
-      </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="creater-logo">
-        <img src="img/htmlacademy.png" alt="Логотип HTML академии" />
-      </a>
+        <nav>
+          <ul class="footer-actions">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer-middle">
+        <address>г. Москва, ул. Строителей, 15</address>
+        <nav>
+          <ul class="footer-nav">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="telephone">Тел.: +7 (495) 495-95-95</a>
+      </section>
+      <section class="footer-bottom">
+        <ul class="socials">
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">Twitter</a></li>
+        </ul>
+        <a
+          href="https://htmlacademy.ru/intensive/htmlcss"
+          class="creater-logo"
+          target="_blank"
+        >
+          <img src="img/htmlacademy.png" alt="Логотип HTML академии" />
+        </a>
+      </section>
     </footer>
   </body>
 </html>
