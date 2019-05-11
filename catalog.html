@@ -16,7 +16,15 @@
         />
       </a>
       <div class="user-actions">
-        <!-- search form  -->
+        <form action="" method="get" class="search-form">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Поиск по сайту"
+          />
+          <input type="submit" value="Найти" class="search-btn" />
+        </form>
         <ul class="actions">
           <li><a href="#">Валентин Петухов</a></li>
           <li><a href="#">Выйти</a></li>
@@ -54,59 +62,145 @@
           <li><a>Моноподы для селфи</a></li>
         </ul>
       </section>
-      <!--Filter and sort-->
-      <section class="catalog">
-        <h2 class="visually-hidden">Товары</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3><a href="#">Любительская селфи-палка</a></h3>
-            <a href="#">
-              <img
-                src="img/item-1.png"
-                alt="Фото товара"
-                width="360"
-                height="380"
-              />
-            </a>
-            <span class="item-price">500 руб.</span>
-          </li>
-          <li class="catalog-item">
-            <h3><a href="#">Профессиональная селфи-палка</a></h3>
-            <a href="#">
-              <img
-                src="img/item-2.png"
-                alt="Фото товара"
-                width="360"
-                height="380"
-              />
-            </a>
-            <span class="item-price">1 500 руб.</span>
-          </li>
-          <li class="catalog-item">
-            <h3><a href="#">Непотопляемая селфи-палка</a></h3>
-            <a href="#">
-              <img
-                src="img/item-3.png"
-                alt="Фото товара"
-                width="360"
-                height="380"
-              />
-            </a>
-            <span class="item-price">2 500 руб.</span>
-          </li>
-          <li class="catalog-item">
-            <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
-            <a href="#">
-              <img
-                src="img/item-4.png"
-                alt="Фото товара"
-                width="360"
-                height="380"
-              />
-            </a>
-            <span class="item-price">4 900 руб.</span>
-          </li>
-        </ul>
+      <section class="filter-sort">
+        <div class="filter">
+          <h2>Фильтр:</h2>
+        </div>
+        <div class="sort">
+          <h2>Сортировка:</h2>
+          <ul class="sort-list">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По популярности</a></li>
+          </ul>
+          <ul class="direction">
+            <li><a href="#">По возрастанию</a></li>
+            <li><a href="#">По убыванию</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog-filter">
+        <div class="filter">
+          <form action="" method="GET">
+            <h3>Стоимость</h3>
+            <div class="range">
+              <!--не знаю пока как сделать-->
+            </div>
+            <h3>Цвет</h3>
+            <ul class="item-color">
+              <li>
+                <input type="checkbox" name="color" id="black" checked /><label
+                  for="black"
+                  >Черный</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" name="color" id="white" /><label
+                  for="white"
+                  >Белый</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" name="color" id="blue" checked /><label
+                  for="blue"
+                  >Синий</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" name="color" id="red" checked /><label
+                  for="red"
+                  >Красный</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" name="color" id="pink" /><label
+                  for="pink"
+                  >Розовый</label
+                >
+              </li>
+            </ul>
+            <h3>Bluetooth</h3>
+            <ul class="bluetooth-list">
+              <li>
+                <input type="radio" name="true" id="true" /><label for="true"
+                  >Есть</label
+                >
+              </li>
+              <li>
+                <input type="radio" name="false" id="false" /><label for="false"
+                  >Нет</label
+                >
+              </li>
+            </ul>
+            <input type="submit" value="Показать" class="btn" />
+          </form>
+        </div>
+        <div class="catalog">
+          <h2 class="visually-hidden">Товары</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h3><a href="#">Любительская селфи-палка</a></h3>
+              <a href="#">
+                <img
+                  src="img/item-1.png"
+                  alt="Фото товара"
+                  width="360"
+                  height="380"
+                />
+              </a>
+              <span class="item-price">500 руб.</span>
+            </li>
+            <li class="catalog-item">
+              <h3><a href="#">Профессиональная селфи-палка</a></h3>
+              <a href="#">
+                <img
+                  src="img/item-2.png"
+                  alt="Фото товара"
+                  width="360"
+                  height="380"
+                />
+              </a>
+              <span class="item-price">1 500 руб.</span>
+            </li>
+            <li class="catalog-item">
+              <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+              <a href="#">
+                <img
+                  src="img/item-3.png"
+                  alt="Фото товара"
+                  width="360"
+                  height="380"
+                />
+              </a>
+              <span class="item-price">2 500 руб.</span>
+            </li>
+            <li class="catalog-item">
+              <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+              <a href="#">
+                <img
+                  src="img/item-4.png"
+                  alt="Фото товара"
+                  width="360"
+                  height="380"
+                />
+              </a>
+              <span class="item-price">4 900 руб.</span>
+            </li>
+          </ul>
+        </div>
+        <nav>
+          <ul class="catalog-nav">
+            <li><a href="#">Назад</a></li>
+            <li>
+              <ul class="pages">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Вперед</a></li>
+          </ul>
+        </nav>
       </section>
     </main>
     <footer class="site-footer">
