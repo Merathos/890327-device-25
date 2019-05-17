@@ -7,12 +7,12 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="logo">
+      <a href="index.html" class="logo" aria-label="На главную">
         <img src="img/logo-device.svg" alt="Логотип интернет-магазина Device" width="163" height="35" />
       </a>
       <div class="user-actions">
         <form action="https://echo.htmlacademy.ru/" method="get" class="search-form">
-          <input type="text" name="search" id="search" placeholder="Поиск по сайту" />
+          <input type="text" name="search" placeholder="Поиск по сайту" />
           <button type="submit" class="search-btn">Найти</button>
         </form>
         <ul class="actions">
@@ -70,23 +70,29 @@
       <section class="catalog-filter">
         <div class="filter">
           <form action="https://echo.htmlacademy.ru/" method="GET">
-            <h3>Стоимость</h3>
-            <div class="range">
-              <!--не знаю пока как сделать-->
-            </div>
-            <h3>Цвет</h3>
-            <ul class="item-color">
-              <li><input type="checkbox" name="color" id="black" checked /><label for="black">Черный</label></li>
-              <li><input type="checkbox" name="color" id="white" /><label for="white">Белый</label></li>
-              <li><input type="checkbox" name="color" id="blue" checked /><label for="blue">Синий</label></li>
-              <li><input type="checkbox" name="color" id="red" checked /><label for="red">Красный</label></li>
-              <li><input type="checkbox" name="color" id="pink" /><label for="pink">Розовый</label></li>
-            </ul>
-            <h3>Bluetooth</h3>
-            <ul class="bluetooth-list">
-              <li><input type="radio" name="true" id="true" /><label for="true">Есть</label></li>
-              <li><input type="radio" name="false" id="false" /><label for="false">Нет</label></li>
-            </ul>
+            <fieldset>
+              <legend>Стоимость</legend>
+              <div class="range">
+                <!--не знаю пока как сделать-->
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Цвет</legend>
+              <ul class="item-color">
+                <li><input type="checkbox" name="color" id="black" checked /><label for="black">Черный</label></li>
+                <li><input type="checkbox" name="color" id="white" /><label for="white">Белый</label></li>
+                <li><input type="checkbox" name="color" id="blue" checked /><label for="blue">Синий</label></li>
+                <li><input type="checkbox" name="color" id="red" checked /><label for="red">Красный</label></li>
+                <li><input type="checkbox" name="color" id="pink" /><label for="pink">Розовый</label></li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <ul class="bluetooth-list">
+                <li><input type="radio" name="bluetooth" id="gotBt" checked /><label for="gotBt">Есть</label></li>
+                <li><input type="radio" name="bluetooth" id="noBt" /><label for="noBt">Нет</label></li>
+              </ul>
+            </fieldset>
             <button type="submit" class="btn">Показать</button>
           </form>
         </div>
@@ -135,7 +141,7 @@
       </section>
     </main>
     <footer class="site-footer">
-      <a class="footer-logo">
+      <a href="index.html" class="footer-logo" aria-label="На главную">
         <img src="img/logo-device.svg" alt="Логотип интернет-магазина Device" width="163" height="35" />
       </a>
       <ul class="footer-actions">
