@@ -51,16 +51,13 @@
       <h1 class="visually-hidden">Девайс-интернет магазин гаджетов</h1>
       <section class="promo-slider">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <input type="radio" name="toggle" id="promo-slide1" checked class="visually-hidden" />
-        <input type="radio" name="toggle" id="promo-slide2" class="visually-hidden" />
-        <input type="radio" name="toggle" id="promo-slide3" class="visually-hidden" />
         <div class="slider-controls">
-          <label for="promo-slide1" class="slider-btn"></label>
-          <label for="promo-slide2" class="slider-btn"></label>
-          <label for="promo-slide3" class="slider-btn"></label>
+          <button class="slider-btn"></button>
+          <button class="slider-btn"></button>
+          <button class="slider-btn"></button>
         </div>
         <div class="promo-slides">
-          <section class="slide-one">
+          <section class="slide current">
             <h3 class="visually-hidden">Монопод длиной 8,5 метров</h3>
             <img src="img/slider-1.png" alt="Монопод" width="384" height="486" />
             <b class="lead"
@@ -73,19 +70,21 @@
             </p>
             <a href="#" class="btn">Подробнее</a>
             <table>
-              <tr>
-                <th>Длина палки</th>
-                <th>Вес палки</th>
-                <th>Материал</th>
-              </tr>
-              <tr>
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+              </tbody>
             </table>
           </section>
-          <section class="slide-two">
+          <section class="slide">
             <h3 class="visually-hidden">Смарт браслет</h3>
             <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485" />
             <b class="lead"
@@ -105,7 +104,7 @@
               </tr>
             </table>
           </section>
-          <section class="slide-three">
+          <section class="slide">
             <h3 class="visually-hidden">Квадракоптер с мощным лазером</h3>
             <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334" />
             <b class="lead">Порхает как бабочка, жалит как пчела!</b>
@@ -131,44 +130,56 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="products-list">
           <li>
-            <a href="#"
-              ><img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55" />
+            <a href="#">
+              <div class="products-bg">
+                <img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55" />
+              </div>
               <p>Виртуальная реальность</p></a
-            >
+            ></a>
           </li>
           <li>
-            <a href="#"
-              ><img
-                src="img/popular-2.svg"
-                alt="Моноподы
+            <a href="#">
+              <div class="products-bg">
+                <img
+                  src="img/popular-2.svg"
+                  alt="Моноподы
               для селфи"
-                width="86"
-                height="117"
-              />
+                  width="86"
+                  height="117"
+                />
+              </div>
               <p>Моноподы для селфи</p></a
             >
           </li>
           <li>
-            <a href="#"
-              ><img src="img/popular-3.svg" alt="Экшн-камеры" width="71" height="87" />
+            <a href="#">
+              <div class="products-bg">
+                <img src="img/popular-3.svg" alt="Экшн-камеры" width="71" height="87" />
+              </div>
               <p>Экшн-камеры</p></a
             >
           </li>
           <li>
-            <a href="#"
-              ><img src="img/popular-4.svg" alt="Фитнес-браслеты" width="107" height="65" />
+            <a href="#">
+              <div class="products-bg">
+                <img src="img/popular-4.svg" alt="Фитнес-браслеты" width="107" height="65" />
+              </div>
               <p>Фитнес-браслеты</p></a
             >
           </li>
           <li>
-            <a href="#"
-              ><img src="img/popular-5.svg" alt="Умные часы" width="56" height="98" />
+            <a href="#">
+              <div class="products-bg">
+                <img src="img/popular-5.svg" alt="Умные часы" width="56" height="98" />
+              </div>
               <p>Умные часы</p></a
             >
           </li>
           <li>
-            <a href="#"
-              ><img src="img/popular-6.svg" alt="Квадрокоптеры" width="132" height="69" />
+            <a href="#">
+              <div class="products-bg">
+                <img src="img/popular-6.svg" alt="Квадрокоптеры" width="132" height="69" />
+              </div>
               <p>Квадрокоптеры</p></a
             >
           </li>
@@ -176,30 +187,27 @@
       </section>
       <section class="services-slider">
         <h2 class="visually-hidden">Услуги</h2>
-        <input type="radio" name="toggle2" id="services-slide1" checked class="visually-hidden" />
-        <input type="radio" name="toggle2" id="services-slide2" class="visually-hidden" />
-        <input type="radio" name="toggle2" id="services-slide3" class="visually-hidden" />
         <div class="slider-controls">
-          <label for="services-slide1" class="services-btn">Доставка</label>
-          <label for="services-slide2" class="services-btn">Гарантия</label>
-          <label for="services-slide3" class="services-btn">Кредит</label>
+          <button class="services-btn">Доставка</button>
+          <button class="services-btn">Гарантия</button>
+          <button class="services-btn">Кредит</button>
         </div>
         <div class="services-slides">
-          <section class="services-one">
+          <section class="services-slide current">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
               заработаем, поднимая его на ваш этаж.
             </p>
           </section>
-          <section class="services-two">
+          <section class="services-slide">
             <h3>Гарантия</h3>
             <p>
               Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.
             </p>
           </section>
-          <section class="services-three">
+          <section class="services-slide">
             <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия

@@ -139,6 +139,86 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* promo slider */
+
+.slide .lead {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+}
+
+.slide th {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.slide td {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+/* products */
+
+.products-bg {
+  height: 160px;
+  width: 160px;
+  background-color: #f7e296;
+}
+
+.products-list a:hover .products-bg {
+  background-color: #f0c52e;
+}
+
+.products-list a:active p {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.products-list p {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+/* services */
+
+.services-btn {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  background-color: transparent;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.services-slide h3 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.services-slide:nth-child(1) {
+  background-image: url(../img/delivery.svg);
+  background-repeat: no-repeat;
+}
+
+.services-slide:nth-child(2) {
+  background-image: url(../img/warranty.svg);
+  background-repeat: no-repeat;
+}
+
+.services-slide:nth-child(3) {
+  background-image: url(../img/credit.svg);
+  background-repeat: no-repeat;
+}
+
 /* about us and contacts */
 
 .about-us h2,
@@ -229,6 +309,34 @@ a {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.filter h2,
+.sort h2 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sort-list a {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-list a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sort-list li:nth-child(1) a {
+  color: rgba(0, 0, 0, 1);
+}
+
 .filter legend {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -257,4 +365,24 @@ a {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
+}
+
+.catalog-nav a,
+.catalog-nav a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-nav a:active,
+.catalog-nav a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-nav li:nth-child(n + 3):not(:last-child) a {
+  color: rgba(0, 0, 0, 0.3);
 }
