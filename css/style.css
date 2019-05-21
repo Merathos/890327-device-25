@@ -1,0 +1,260 @@
+@font-face {
+  font-weight: 800;
+  font-family: "Gilroy ExtraBold";
+  font-style: normal;
+
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Gilroy Light";
+  font-style: normal;
+
+  src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.btn {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+}
+/* HEADER */
+
+.site-header {
+  background-color: #f7e296;
+}
+
+.search-form input {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+}
+
+.search-form input:hover {
+  opacity: 0.6;
+}
+
+.search-form input:focus {
+  opacity: 1;
+  border-bottom: 2px solid #000000;
+}
+
+.search-btn {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.search-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.site-header ul {
+  list-style: none;
+}
+
+.site-header a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.site-header a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-header a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-menu-rest,
+.catalog-link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.sub-menu {
+  line-height: 36px;
+}
+
+.actions .inner-quit {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* about us and contacts */
+
+.about-us h2,
+.contacts h2 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.about-us p,
+.contacts p {
+  letter-spacing: 0px;
+}
+
+.about-us ul {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+/* footer */
+
+.site-footer {
+  background-color: #464646;
+}
+
+.footer-actions a {
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-actions a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-actions a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-middle address,
+.telephone {
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.footer-nav a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-nav a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-nav a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-actions .inner-quit {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* INNER PAGE */
+
+.inner-nav h1 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filter legend {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter ul {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.catalog-item h3 a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog-item .item-price {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
