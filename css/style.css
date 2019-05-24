@@ -225,6 +225,14 @@ a {
 
 /* promo slider */
 
+.promo-slider {
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+}
+
 .slide .lead {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
@@ -244,12 +252,61 @@ a {
   font-weight: 400;
 }
 
+.slide th,
+.slide td {
+  background-color: lime;
+}
+
+.slide {
+  display: flex;
+  flex-shrink: 0;
+  height: 490px;
+  width: 1160px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #f7e296 110px, #ffffff 110px);
+  margin-bottom: 105px;
+}
+
+.slide div {
+  align-self: flex-end;
+  width: 495px;
+  margin-left: 110px;
+}
+
+.slide p {
+  margin: 0;
+  padding: 18px 0px 43px;
+}
+
+.slide table {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border-spacing: 20px;
+}
+
+.slide thead {
+  order: 2;
+}
+
+.promo-slides {
+  display: flex;
+  overflow: hidden;
+}
+
 /* products */
+.products {
+  margin-bottom: 70px;
+}
 
 .products-bg {
   height: 160px;
   width: 160px;
   background-color: #f7e296;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .products-list a:hover .products-bg {
@@ -265,9 +322,35 @@ a {
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
+  margin: 0;
+  margin-top: 35px;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.products-list li {
+  width: 160px;
+  height: 260px;
 }
 
 /* services */
+
+.services-slider {
+  background: linear-gradient(to top, #e5e5e5 287px, #ffffff 287px);
+}
+
+.services-slides {
+  display: flex;
+  flex-shrink: 0;
+  width: 876px;
+  overflow: hidden;
+}
 
 .services-btn {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -279,6 +362,23 @@ a {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  width: 160px;
+  padding: 9px 15px;
+  margin-bottom: 24px;
+}
+
+.services-slide {
+  width: 876px;
+  height: 388px;
+  padding-top: 75px;
+  padding-left: 117px;
+  background-position: right 65px bottom 61%;
+  flex-shrink: 0;
+}
+
+.services-slide p {
+  margin-top: 30px;
+  width: 458px;
 }
 
 .services-slide h3 {
@@ -286,6 +386,7 @@ a {
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
+  margin: 0;
 }
 
 .services-slide:nth-child(1) {
@@ -301,6 +402,28 @@ a {
 .services-slide:nth-child(3) {
   background-image: url(../img/credit.svg);
   background-repeat: no-repeat;
+}
+
+.services-slider .container {
+  display: flex;
+}
+
+.services-slider .services-controls {
+  width: 284px;
+  height: 388px;
+  padding-top: 80px;
+  flex-shrink: 0;
+}
+
+/* brands */
+
+.brand-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  padding: 94px 20px 90px;
+  justify-content: space-between;
 }
 
 /* about us and contacts */
