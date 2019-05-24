@@ -68,17 +68,46 @@ a {
 .modal {
   display: none;
 }
+
+.container {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 /* HEADER */
 
 .site-header {
   background-color: #f7e296;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: -19px;
+}
+
+.search-form {
+  margin-right: 104px;
 }
 
 .search-form input {
+  position: relative;
+  top: -3px;
+  padding: 0;
+  width: 355px;
+  padding-left: 40px;
+  padding-bottom: 10px;
   font: inherit;
   background-color: transparent;
   border: none;
   opacity: 0.3;
+  outline: none;
+  border-bottom: 2px solid transparent;
 }
 
 .search-form input:hover {
@@ -90,7 +119,15 @@ a {
   border-bottom: 2px solid #000000;
 }
 
+.search-form input:focus ~ .search-btn {
+  visibility: visible;
+}
+
 .search-btn {
+  visibility: hidden;
+  margin-left: -4px;
+  width: 85px;
+  padding: 7px 18px;
   font: inherit;
   background-color: transparent;
   border: 2px solid #000000;
@@ -105,10 +142,6 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.site-header ul {
-  list-style: none;
-}
-
 .site-header a {
   color: rgba(0, 0, 0, 1);
 }
@@ -121,7 +154,53 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-menu-rest,
+.site-header .user-actions {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+
+.site-header .actions {
+  width: 490px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions li:nth-last-child(1) {
+  margin-left: 65px;
+}
+
+.actions li:nth-last-child(2) {
+  margin-left: auto;
+}
+
+.actions li:nth-child(1) {
+  padding-left: 25px;
+}
+
+.site-header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-header nav {
+  display: flex;
+}
+
+.main-menu .sub-menu {
+  display: none;
+}
+
+.catalog-link:hover ~ .sub-menu {
+  display: block;
+}
+
+.main-menu-rest {
+  display: flex;
+}
+
+.main-menu-rest a,
 .catalog-link {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -131,12 +210,29 @@ a {
   letter-spacing: 0.2em;
 }
 
+.catalog-link {
+  margin-right: 325px;
+}
+
 .sub-menu {
   line-height: 36px;
 }
 
+.main-menu-rest {
+  width: 495px;
+}
+
+.main-menu-rest li:nth-child(1) {
+  margin-right: 35px;
+}
+
+.main-menu-rest li:nth-last-child(1) {
+  margin-left: auto;
+}
+
 .actions .inner-quit {
   color: rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
 }
 
 /* promo slider */
