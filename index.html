@@ -333,11 +333,15 @@
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post" class="form-letter">
         <button type="button" aria-label="Закрыть форму" class="close-btn"></button>
-        <div>
-          <label for="contact-data">Ваше имя:</label>
-          <input type="text" name="contact-data" id="contact-data" placeholder="Имя Фамилия" />
-          <label for="contact-email">Ваш e-mail:</label>
-          <input type="email" name="contact-email" id="contact-email" placeholder="email@example.com" />
+        <div class="name-email">
+          <div class="name">
+            <label for="contact-data">Ваше имя:</label>
+            <input type="text" name="contact-data" id="contact-data" placeholder="Имя Фамилия" />
+          </div>
+          <div class="email">
+            <label for="contact-email">Ваш e-mail:</label>
+            <input type="email" name="contact-email" id="contact-email" placeholder="email@example.com" />
+          </div>
         </div>
         <div>
           <label for="subject">Текст письма</label>
