@@ -608,6 +608,10 @@ a {
   text-align: start;
 }
 
+.services-btn-active:active {
+  color: #f7e184;
+}
+
 .services-btn-active::before {
   transform: scaleY(1);
   background-color: #000000;
@@ -682,6 +686,22 @@ a {
   display: flex;
   padding: 94px 0px 87px;
   justify-content: space-between;
+}
+
+.brand-list li:nth-child(1):hover {
+  background: url("../img/partner-1color.png") no-repeat;
+}
+
+.brand-list li:nth-child(2):hover {
+  background: url("../img/partner-2color.png") no-repeat;
+}
+
+.brand-list li:nth-child(3):hover {
+  background: url("../img/partner-3color.png") no-repeat;
+}
+
+.brand-list li:nth-child(4):hover {
+  background: url("../img/partner-4color.png") no-repeat;
 }
 
 /* about us and contacts */
@@ -1008,6 +1028,42 @@ a {
   line-height: 40px;
 }
 
+.item-color label {
+  position: relative;
+}
+
+.item-color label::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-off.svg") no-repeat;
+  left: -39px;
+  top: -2px;
+}
+
+.item-color input:checked + label::before {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.bluetooth-list label {
+  position: relative;
+}
+
+.bluetooth-list label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url("../img/radio-off.svg") no-repeat;
+  left: -39px;
+  top: -4px;
+}
+
+.bluetooth-list input:checked + label::before {
+  background: url("../img/radio-on.svg") no-repeat;
+}
+
 .catalog-item h3 a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -1044,6 +1100,52 @@ a {
 
 .inner-page .footer-actions li:nth-child(2) {
   margin-left: 20px;
+}
+
+.catalog-item {
+  position: relative;
+}
+
+.item-hover {
+  display: none;
+  position: absolute;
+  width: 360px;
+  height: 380px;
+  padding-top: 170px;
+  top: 0;
+  left: 0;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.catalog-item:hover .item-hover {
+  display: block;
+}
+
+.item-hover a {
+  display: block;
+  margin: 0 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  text-align: center;
+}
+
+.item-hover .btn {
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+.toCompare {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  line-height: 36px;
+}
+
+.toCompare:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.toCompare:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /* inner nav */
