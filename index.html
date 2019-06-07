@@ -54,9 +54,9 @@
       <section class="promo-slider container">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="slider-controls">
-          <button class="promo slide-active"></button>
-          <button class="promo"></button>
-          <button class="promo"></button>
+          <button class="promo slide-active" id="promo1"></button>
+          <button class="promo" id="promo2"></button>
+          <button class="promo" id="promo3"></button>
         </div>
         <div class="promo-slides">
           <section class="slide current">
@@ -198,32 +198,34 @@
         <div class="container">
           <h2 class="visually-hidden">Услуги</h2>
           <div class="services-controls">
-            <button class="btn services-btn services-btn-active">Доставка</button>
-            <button class="btn services-btn">Гарантия</button>
-            <button class="btn services-btn">Кредит</button>
+            <button class="btn services-btn services-btn-active" id="services1_btn">Доставка</button>
+            <button class="btn services-btn" id="services2_btn">Гарантия</button>
+            <button class="btn services-btn" id="services3_btn">Кредит</button>
           </div>
-          <div class="services-slides">
-            <section class="services-slide current">
-              <h3>Доставка</h3>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж.
-              </p>
-            </section>
-            <section class="services-slide">
-              <h3>Гарантия</h3>
-              <p>
-                Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.
-              </p>
-            </section>
-            <section class="services-slide">
-              <h3>Кредит</h3>
-              <p>
-                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-                кредита. Выгодные для нашего банка, разумеется.
-              </p>
-            </section>
+          <div class="services-wrapper">
+            <div class="services-slides">
+              <section class="services-slide">
+                <h3>Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                  заработаем, поднимая его на ваш этаж.
+                </p>
+              </section>
+              <section class="services-slide">
+                <h3>Гарантия</h3>
+                <p>
+                  Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                  Товар, не дом, конечно же.
+                </p>
+              </section>
+              <section class="services-slide">
+                <h3>Кредит</h3>
+                <p>
+                  Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+                  кредита. Выгодные для нашего банка, разумеется.
+                </p>
+              </section>
+            </div>
           </div>
         </div>
       </section>
@@ -276,9 +278,11 @@
             Всякое бывает.
           </p>
           <div class="map">
-            <img src="img/map.png" alt="Карта" width="560" height="222" />
+            <a href="https://goo.gl/maps/vgBTMXPaJyMTWNWH8" class="map-link" target="_blank">
+              <img src="img/map.png" alt="Карта" width="560" height="222" />
+            </a>
           </div>
-          <a href="#" class="btn">Напишите нам</a>
+          <a href="#" class="btn" id="write-btn">Напишите нам</a>
         </section>
       </div>
     </main>
@@ -344,8 +348,8 @@
         <button type="button" aria-label="Закрыть форму" class="close-btn"></button>
         <div class="name-email">
           <div class="name">
-            <label for="contact-data">Ваше имя:</label>
-            <input type="text" name="contact-data" id="contact-data" placeholder="Имя Фамилия" />
+            <label for="contact-name">Ваше имя:</label>
+            <input type="text" name="contact-name" id="contact-name" placeholder="Имя Фамилия" />
           </div>
           <div class="email">
             <label for="contact-email">Ваш e-mail:</label>
@@ -359,5 +363,18 @@
         <button type="submit" class="btn">Отправить</button>
       </form>
     </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button type="button" aria-label="Закрыть форму" class="close-btn"></button>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1559926797213!5m2!1sru!2sua"
+        width="960"
+        height="559"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

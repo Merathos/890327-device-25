@@ -14,6 +14,46 @@
   src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
 }
 
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, calc(-50% - 2000px));
+  }
+
+  70% {
+    transform: translate(-50%, calc(-50% + 30px));
+  }
+
+  90% {
+    transform: translate(-50%, calc(-50% - 15px));
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(calc(-50% - 10px), -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(calc(-50% + 10px), -50%);
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -415,7 +455,7 @@ a {
 
 .slide:nth-child(3) div {
   margin-top: 79px;
-  width: 495px;
+  width: 510px;
 }
 
 .slide div {
@@ -480,6 +520,11 @@ a {
 
 .promo-slides {
   display: flex;
+  transition: 0.5s ease-in-out;
+}
+
+.promo2 {
+  transform: translateX(-1160px);
 }
 
 .slider-features {
@@ -587,6 +632,9 @@ a {
   display: flex;
   flex-shrink: 0;
   width: 876px;
+}
+
+.services-wrapper {
   overflow: hidden;
 }
 
@@ -1573,6 +1621,20 @@ a {
   transform: translate(-50%, -50%);
   padding: 95px 100px;
   box-shadow: 0 10px 20px 0 rgba(0, 4, 6, 0.2);
+}
+
+.modal-map {
+  padding: 0;
+  height: 559px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal .close-btn {
