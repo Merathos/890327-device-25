@@ -1,3 +1,14 @@
+// sub-menu
+const submenu_ul = document.querySelector(".sub-menu");
+const catalog_link = document.querySelector('.catalog-link');
+
+submenu_ul.classList.add('submenuToggle');
+
+catalog_link.addEventListener('click', evt => {
+  evt.preventDefault();
+  submenu_ul.classList.toggle('submenuToggle');
+});
+
 // modal- write to us
 const modal_div = document.querySelector(".modal");
 const write_btn = document.querySelector("#write-btn");
@@ -9,6 +20,7 @@ const email = modal_div.querySelector("#contact-email");
 write_btn.addEventListener("click", evt => {
   evt.preventDefault();
   modal_div.classList.add("modal-show");
+  name.focus();
 });
 
 close_btn.addEventListener("click", () => {
@@ -25,7 +37,7 @@ modal_form.addEventListener("submit", evt => {
   }
 });
 
-window.addEventListener("keydown", function(evt) {
+window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (modal_div.classList.contains("modal-show")) {
@@ -48,7 +60,7 @@ closeMap.addEventListener("click", () => {
   map_div.classList.remove("modal-show");
 });
 
-window.addEventListener("keydown", function(evt) {
+window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (map_div.classList.contains("modal-show")) {
@@ -58,27 +70,35 @@ window.addEventListener("keydown", function(evt) {
 });
 
 // promo slider
-const slides_div = document.querySelector(".promo-slides");
+const slide1 = document.querySelector('.slide1');
+const slide2 = document.querySelector('.slide2');
+const slide3 = document.querySelector('.slide3');
 const promo1_btn = document.querySelector("#promo1");
 const promo2_btn = document.querySelector("#promo2");
 const promo3_btn = document.querySelector("#promo3");
 
 promo1_btn.addEventListener("click", () => {
-  slides_div.style.transform = "translateX(0)";
+  slide1.classList.add('current');
+  slide2.classList.remove('current');
+  slide3.classList.remove('current');
   promo1_btn.classList.add("slide-active");
   promo2_btn.classList.remove("slide-active");
   promo3_btn.classList.remove("slide-active");
 });
 
 promo2_btn.addEventListener("click", () => {
-  slides_div.style.transform = "translateX(-1160px)";
+  slide1.classList.remove('current');
+  slide2.classList.add('current');
+  slide3.classList.remove('current');
   promo1_btn.classList.remove("slide-active");
   promo2_btn.classList.add("slide-active");
   promo3_btn.classList.remove("slide-active");
 });
 
 promo3_btn.addEventListener("click", () => {
-  slides_div.style.transform = "translateX(-2320px)";
+  slide1.classList.remove('current');
+  slide2.classList.remove('current');
+  slide3.classList.add('current');
   promo1_btn.classList.remove("slide-active");
   promo2_btn.classList.remove("slide-active");
   promo3_btn.classList.add("slide-active");
