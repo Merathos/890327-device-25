@@ -7,7 +7,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" />
   <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <title>Моноподы</title>
 </head>
 
@@ -19,7 +19,7 @@
       </a>
       <div class="user-actions">
         <form action="https://echo.htmlacademy.ru/" method="get" class="search-form">
-          <input type="text" name="search" placeholder="Поиск по сайту" />
+          <input type="text" name="search" placeholder="Поиск по сайту" required class="search" />
           <button type="submit" class="search-btn">Найти</button>
         </form>
         <ul class="actions inner-actions">
@@ -181,11 +181,11 @@
           </div>
           <nav>
             <ul class="catalog-nav">
-              <li><a href="#">Назад</a></li>
-              <li><a href="#">1</a></li>
+              <li><a href="#" class="back">Назад</a></li>
+              <li><a href="#" class="current-page">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
-              <li><a href="#">Вперед</a></li>
+              <li><a href="#" class="forward">Вперед</a></li>
             </ul>
           </nav>
         </div>
@@ -206,7 +206,7 @@
             <li>
               <a href="#" aria-label="Перейти в личный кабинет" class="user">Валентин Петухов</a>
             </li>
-            <li><a href="#" class="inner-quit">Выйти</a></li>
+            <li class="inner-quit"><a href="#">Выйти</a></li>
             <li><a href="#" class="compare">Сравнить</a></li>
             <li><a href="#" class="cart">Корзина</a></li>
           </ul>
@@ -246,7 +246,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
