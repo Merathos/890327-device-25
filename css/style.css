@@ -143,6 +143,10 @@ a {
   position: relative;
 }
 
+.inner-actions .inner-quit {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .logo img {
   margin-bottom: 13px;
 }
@@ -248,7 +252,7 @@ a {
   justify-content: flex-end;
 }
 
-.site-header .actions a {
+.actions a {
   display: block;
   padding-left: 25px;
 }
@@ -528,7 +532,7 @@ a {
   font-weight: 800;
   font-size: 179px;
   line-height: 179px;
-  font-family: "Gilroy", "Arial", "sans-serif";
+  font-family: "Gilroy", "Arial", sans-serif;
   color: #fff;
   letter-spacing: 1.8px;
   z-index: -1;
@@ -572,7 +576,7 @@ a {
   font-weight: 300;
   font-size: 36px;
   line-height: 48px;
-  font-family: "Gilroy", "Arial", "sans-serif";
+  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.36px;
 }
 
@@ -1220,7 +1224,7 @@ a {
   padding: 14px 12px;
   font-weight: 700;
   font-size: 14px;
-  font-family: "Gilroy", "Arial", "sans-serif";
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1533,7 +1537,7 @@ a {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.71;
-  font-family: "Gilroy", "Arial", "sans-serif";
+  font-family: "Gilroy", "Arial", sans-serif;
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
   font-style: normal;
@@ -1544,7 +1548,7 @@ a {
 .range-labels input {
   width: 60px;
   height: 20px;
-  font-family: "Gilroy", "Arial", "sans-serif";
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.2);
   margin-top: 13px;
   background-color: #efefef;
@@ -1784,7 +1788,7 @@ a {
 
 .modal label {
   display: block;
-  font-family: "Gilroy", "Arial", "sans-serif";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0;
@@ -1794,7 +1798,7 @@ a {
 
 .modal input,
 .modal textarea {
-  font-family: "Open Sans", "Arial", "sans-serif";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
